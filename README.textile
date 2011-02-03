@@ -1,0 +1,40 @@
+h1. The Game of Assault
+
+The Game of Assault is a coding contest project. This version is being developed solely by me, *kornypoet*.
+
+h2. Overview
+
+The Game of Assault is a much more a coding exercise than an actual _game_. The only real _player_ in the
+game is the program itself. A successful _scenario_ is one in which the program is able to provide a solution
+while adhering to the game rules.
+
+h2. Object
+
+The object of the game is very straightforward: there is a _battlefield_ which will be represented by a grid
+of squares with infinitely many rows and columns. The battlefield is divided into two halves by a horizontal
+line known as the _battle line_. The upper half of the battlefield will represent enemy territory, while
+the lower half will represent friendly territory. There will be _outposts_ placed in enemy territory and _soldiers_
+placed in friendly territory. The object of the game is to place the soldiers in such a way so that they may
+_capture_ all of the outposts.
+
+h2. Rules
+
+In any given scenario, the outposts are always placed first. An outpost is played within a square on the
+battlefield in only enemy territory. Any number and configuration of outposts may be played. Next, any
+needed amount of soldiers may be played on squares only in friendly territory. Once all necessary soldiers
+have been placed, the soldiers _advance_ one at a time. In order to advance, a soldier must _jump_ over
+another soldier directly adjacent to itself, either vertically or horizontally, not diagonally. Once a soldier
+has advanced, the soldier that was jumped over is removed, as if they were killed in battle. A single soldier
+may advance as many moves as necessary during a turn, provided there are enough soldiers to jump. Once a
+soldier has finished advancing, it is left on the battlefield, either in friendly or enemy territory. All
+soldiers that have been jumped over are removed. At the end of an advance, if a soldier is on the same square
+as an outpost, then that outpost is captured. In order to complete a scenario successfully, all of the
+outposts must be captured at the end of an advance. If a soldier has captured an outpost, but is then jumped
+over by another soldier, that soldier is then removed and the outpost is no longer captured. All outposts
+must have a soldier on them after all jumped soldiers have been removed.
+
+h2. Development
+
+Currently, this project is still under development and as such, is not complete. This area of the README will
+detail current progress of the game as it nears completion. Notes and thought about the game development can
+be found here:https://github.com/kornypoet/assault/blob/master/test.textile.
