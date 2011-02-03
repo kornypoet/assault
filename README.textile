@@ -37,4 +37,4 @@ h2. Development
 
 Currently, this project is still under development and as such, is not complete. This area of the README will
 detail current progress of the game as it nears completion. Notes and thought about the game development can
-be found here:https://github.com/kornypoet/assault/blob/master/test.textile.
+be found "here":https://github.com/kornypoet/assault/blob/master/notes/NOTES.textile.
