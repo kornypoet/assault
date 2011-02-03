@@ -1,0 +1,18 @@
+
+Desires:
+* use this project to learn and implement new coding practices
+
+Todo:
+* write cucumber features describing game results
+* decide on a class layout
+* decide on a visual representation of the game board and scenario results
+
+Current thoughts:
+* the program should pick a beginning outpost, most likely the one that is the 'farthest' away, and then
+establish soldier placement. Subsequent outposts will be chosen, again based upon distance, and one at a
+time, the program should place soldiers
+* perhaps every completed scenario could be stored in a database that can be referenced later
+* maybe certain _patterns_ could be stored in the database that can be referenced later
+* the first emphasis should be on scenario completion, rather than on optimization
+* the game should be run with rake
+* first feature tests should probably only test single outposts, in a variety of 'distances'
