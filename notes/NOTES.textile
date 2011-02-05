@@ -16,3 +16,16 @@ time, the program should place soldiers
 * the first emphasis should be on scenario completion, rather than on optimization
 * the game should be run with rake
 * first feature tests should probably only test single outposts, in a variety of 'distances'
+* Battlefield will be an array of arrays, corresponding to rows and columns
+* Battlefield shoudl be initialized with pairs of coordinates for outposts
+* I want the Battlefield upper (and lower) size to grow dynamically as more pieces are placed
+* for now I want output to look like this:
+[ ][ ][f][ ][ ]
+[ ][ ][ ][f][ ]
+[ ][f][ ][ ][ ]
+===============
+[o][o][o][o][o]
+[o][o][o][o][ ]
+[ ][ ][o][ ][ ]
+
+where the 'o's are soldiers and the 'f's are outposts

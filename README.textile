@@ -36,5 +36,17 @@ must have a soldier on them after all jumped soldiers have been removed.
 h2. Development
 
 Currently, this project is still under development and as such, is not complete. This area of the README will
-detail current progress of the game as it nears completion. Notes and thought about the game development can
+detail current progress of the game as it nears completion. Notes and thoughts about the game development can
 be found "here":https://github.com/kornypoet/assault/blob/master/notes/NOTES.textile.
+
+h2. Usage
+
+Clone the assault repository
+
+@git clone git@github.com:kornypoet/assault@
+
+Run the tests (not implemented yet)
+
+@rake features@
+
+
