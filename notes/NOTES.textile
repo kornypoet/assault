@@ -29,3 +29,12 @@ time, the program should place soldiers
 [ ][ ][o][ ][ ]
 
 where the 'o's are soldiers and the 'f's are outposts
+* thinking about reworking the idea to be viruses: you place white blood cells and viruses in 'cells'
+and they have to 'jump' each other to get closer to the viruses? maybe...
+* if we think of the battlefield as an x-y plane, rather than a limited array, we can expand in all directions
+without changing array size
+* can we store information about the battlefield as a hash? {Cell=>'virus',Cell=>'wbc',Cell=>...}
+where each Cell is an x-y pair
+* the goal of this is to be able to 'quickly' scan a large set and get back information without weird
+location tricks, and to be expandable
+
