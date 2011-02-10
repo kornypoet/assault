@@ -11,11 +11,11 @@ module Assault
     end
 
     def describe
-      "#{self.class} - #{x_cord}.#{y_cord} - #{life} - #{territory}"
+      "#{self.class} - #{x_cord}.#{y_cord} - #{alive?} - #{territory}"
     end
 
-    def is_dead?
-      !life
+    def alive?
+      life
     end
 
     def territory
