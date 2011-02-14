@@ -25,6 +25,7 @@ module Assault
     def distance_to cell
       x_dist = (self.x_cord - cell.x_cord).abs
       y_dist = (self.y_cord - cell.y_cord).abs
+      x_dist -= 1 if (self.x_cord < 0) ^ (cell.x_cord < 0)
       y_dist -= 1 unless self.territory == cell.territory
       [x_dist, y_dist]
     end

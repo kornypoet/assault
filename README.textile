@@ -13,25 +13,25 @@ h2. Object
 The object of the game is very straightforward: there is a _battlefield_ which will be represented by a grid
 of squares with infinitely many rows and columns. The battlefield is divided into two halves by a horizontal
 line known as the _battle line_. The upper half of the battlefield will represent enemy territory, while
-the lower half will represent friendly territory. There will be _outposts_ placed in enemy territory and _soldiers_
-placed in friendly territory. The object of the game is to place the soldiers in such a way so that they may
-_capture_ all of the outposts.
+the lower half will represent friendly territory. There will be _viruses_ placed in enemy territory and
+_white blood cells_ placed in friendly territory. The object of the game is to place the white blood cells
+in such a way so that they may eliminate all of the viruses.
 
 h2. Rules
 
-In any given scenario, the outposts are always placed first. An outpost is played within a square on the
-battlefield in only enemy territory. Any number and configuration of outposts may be played. Next, any
-needed amount of soldiers may be played on squares only in friendly territory. Once all necessary soldiers
-have been placed, the soldiers _advance_ one at a time. In order to advance, a soldier must _jump_ over
-another soldier directly adjacent to itself, either vertically or horizontally, not diagonally. Once a soldier
-has advanced, the soldier that was jumped over is removed, as if they were killed in battle. A single soldier
-may advance as many moves as necessary during a turn, provided there are enough soldiers to jump. Once a
-soldier has finished advancing, it is left on the battlefield, either in friendly or enemy territory. All
-soldiers that have been jumped over are removed. At the end of an advance, if a soldier is on the same square
-as an outpost, then that outpost is captured. In order to complete a scenario successfully, all of the
-outposts must be captured at the end of an advance. If a soldier has captured an outpost, but is then jumped
-over by another soldier, that soldier is then removed and the outpost is no longer captured. All outposts
-must have a soldier on them after all jumped soldiers have been removed.
+In any given scenario, the outposts are always placed first. A virus is played within a square on the
+battlefield in only enemy territory. Any number and configuration of viruses may be played. Next, any
+needed amount of white blood cells may be played on squares only in friendly territory. Once all necessary cells
+have been placed, they _advance_ one at a time. In order to advance, a cell must _jump_ over
+another cell directly adjacent to itself, either vertically or horizontally, not diagonally. Once a cell
+has advanced, the cell that was jumped over is removed, as if they were consumed in order for the other cell
+to be able to move. A single cell may advance as many moves as necessary during a turn, provided there are enough
+cells to jump. Once a cell has finished advancing, it is left on the battlefield, either in friendly or enemy
+territory. All cells that have been jumped over are removed. At the end of an advance, if a cell is on the same
+square as a virus, then that virus is considered dead. In order to complete a scenario successfully, all of the
+viruses must be dead at the end of an advance. If a cell has killed a virus, but is then jumped over by
+another cell, that cell is then removed and the virus is no longer dead. All viruses must have a cell on them
+after all jumped cells have been removed in order for all viruses to be considered eliminated.
 
 h2. Development
 
@@ -45,8 +45,8 @@ Clone the assault repository
 
 @git clone git@github.com:kornypoet/assault@
 
-Run the tests (not implemented yet)
+Run the tests
 
-@rake features@
+@cucumber@
 
-
+Grade the code
