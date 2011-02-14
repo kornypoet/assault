@@ -40,19 +40,19 @@ location tricks, and to be expandable
 * currently have the battlefield expandable by checking outermost boundaries and adjusting accordingly
 * also have dealt with the phenomenon of having no 0 coordinates.
 * need to implement actual game logic:
-** in order for a virus to be captured we need to have one of the following 3 setups:
+* in order for a virus to be captured we need to have one of the following 3 setups:
  v, v-o-o, o-o-v, assuming we never want to jump backwards
  |
  o
  |
  o
 
-** the virus need to have one stationary cell placed directly adjacent to it, and then have one mobile cell
+* the virus need to have one stationary cell placed directly adjacent to it, and then have one mobile cell
 placed directly adjacent to the stationary cell, in line with the virus.
 v-s-m
-** when placing a stationary cell, we need to only check the 3 spaces directly adjacent to the virus and
+* when placing a stationary cell, we need to only check the 3 spaces directly adjacent to the virus and
 make sure they are valid placements, i.e. unoccupied and also friendly territory
 ?-v-?
   |
   ?
-** 
+ 
