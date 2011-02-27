@@ -51,4 +51,8 @@ Run the tests
 
 Grade the code
 
+<<<<<<< HEAD
 Different test
+=======
+_testing git stash_
+>>>>>>> 38e58767b34ee73857d62c0dee37e41af9dc3f3c
