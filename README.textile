@@ -50,3 +50,5 @@ Run the tests
 @cucumber@
 
 Grade the code
+
+_testing git stash_
